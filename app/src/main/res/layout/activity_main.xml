@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/background_main"
+    tools:context="com.dang.agi.appflashlight.MainActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:gravity="center"
+        android:layout_marginLeft="100dp"
+        tools:ignore="RtlHardcoded">
+        <TableRow>
+
+            <ImageButton android:background="@drawable/icon_menu_police"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+
+                android:scaleType="fitCenter"
+                android:id="@+id/ibtnPolice"
+                android:padding="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton android:background="@drawable/icon_menu_traffic"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:id="@+id/ibtnTraffic"
+                tools:ignore="ContentDescription" />
+        </TableRow>
+        <TableRow>
+            <ImageButton android:background="@drawable/icon_menu_neon"
+                android:id="@+id/ibtnNeon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+              android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="ContentDescription" />
+            <ImageButton android:background="@drawable/icon_menu_flashlight"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:id="@+id/ibtnFlashLight"
+                tools:ignore="ContentDescription" />
+        </TableRow>
+        <TableRow>
+            <ImageButton android:background="@drawable/icon_menu_warring"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitCenter"
+                android:id="@+id/ibtnwarring"
+                tools:ignore="ContentDescription" />
+            <ImageButton android:background="@drawable/icon_menu_flashbulb"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:id="@+id/ibtnFlashBulb"
+                tools:ignore="ContentDescription" />
+        </TableRow>
+        <TableRow>
+            <ImageButton android:background="@drawable/icon_menu_warring"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitCenter"
+                android:id="@+id/ibtnwarring2"
+                tools:ignore="ContentDescription" />
+            <ImageButton android:background="@drawable/icon_flash_screen"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:id="@+id/ibtnFlashScreen"
+                tools:ignore="ContentDescription" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
