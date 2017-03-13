@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:minLevel="0" android:maxLevel="1">
+    <shape android:shape="rectangle" android:thickness="10dp" android:useLevel="true">
+
+        <stroke android:color="#FF3D00" android:width="10dp" android:dashGap="5dp"
+             android:dashWidth="5dp"/>
+        <corners android:radius="5dp"/>
+
+    </shape>
+</item>
+    <item android:minLevel="2" android:maxLevel="3">
+        <shape android:shape="rectangle" android:thickness="2dp" android:useLevel="true"  android:dashGap="5dp" android:dashWidth="5dp">
+            <stroke android:width="10dp" android:color="#0091EA" android:dashGap="5dp"
+                android:dashWidth="5dp"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+    <item android:minLevel="4" android:maxLevel="5">
+        <shape android:shape="rectangle" android:thickness="2dp" android:useLevel="true"  android:dashGap="5dp" android:dashWidth="5dp">
+            <stroke android:width="10dp" android:color="#212121" android:dashGap="5dp"
+                android:dashWidth="5dp"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+    <item android:minLevel="6" android:maxLevel="7">
+        <shape android:shape="rectangle" android:thickness="2dp" android:useLevel="true"  android:dashGap="5dp" android:dashWidth="5dp">
+            <stroke android:width="10dp" android:color="#304FFE" android:dashGap="5dp"
+                android:dashWidth="5dp"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+    <item android:minLevel="8" android:maxLevel="9">
+        <shape android:shape="rectangle" android:thickness="2dp" android:useLevel="true"  android:dashGap="5dp" android:dashWidth="5dp">
+            <stroke android:width="10dp" android:color="#6200EA" android:dashGap="5dp"
+                android:dashWidth="5dp"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+</level-list>

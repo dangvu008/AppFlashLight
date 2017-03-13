@@ -3,6 +3,7 @@ package com.dang.agi.appflashlight;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
@@ -18,10 +19,12 @@ public class WarringActivity extends AppCompatActivity {
         img = (ImageView) findViewById(R.id.imgPolice1);
         str ="01010101010101";
         mediaPlayer = MediaPlayer.create(WarringActivity.this,R.raw.alert_sound2);
+        mediaPlayer.setLooping(true);
+        mediaPlayer.start();
+        Handler handler = new Handler(){};
         countDownTimer = new CountDownTimer(300,300) {
             @Override
             public void onTick(long millisUntilFinished) {
-                mediaPlayer.start();
             }
 
             @Override
@@ -79,5 +82,9 @@ public class WarringActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+        if (mediaPlayer!=null){
+            mediaPlayer.stop();
+            mediaPlayer.release();
+        }
     }
 }

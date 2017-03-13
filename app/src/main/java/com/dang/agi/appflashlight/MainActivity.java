@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ibtnPolice.setOnClickListener(this);
         ibtnFlashScreen.setOnClickListener(this);
         ibtnWarring2.setOnClickListener(this);
+        ibtnNeon.setOnClickListener(this);
 
     }
 
@@ -65,6 +66,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }break;
             case R.id.ibtnwarring2:{
                 Intent intent = new Intent(MainActivity.this,Warring2.class);
+                startActivity(intent);
+            }break;
+            case R.id.ibtnNeon:{
+                Intent intent = new Intent(MainActivity.this,NeonActivity.class);
                 startActivity(intent);
             }break;
             default:

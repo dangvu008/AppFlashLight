@@ -23,16 +23,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FlashLight" />
-        <activity android:name=".FlashBulb" />
-        <activity android:name=".TrafficActivity" />
-        <activity android:name=".FlashLightActivity" />
-        <activity android:name=".WarringActivity" />
+        <activity android:name=".FlashLight"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".FlashBulb"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".TrafficActivity"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".FlashLightActivity"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".WarringActivity"
+            android:parentActivityName=".MainActivity"
+            />
         <activity
             android:name=".PoliceActivity"
-            android:screenOrientation="landscape" />
-        <activity android:name=".Warring2" />
-        <activity android:name=".ScreenLight"></activity>
+            android:screenOrientation="landscape"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".Warring2" android:parentActivityName=".MainActivity" />
+        <activity android:name=".ScreenLight" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".NeonActivity" android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>
